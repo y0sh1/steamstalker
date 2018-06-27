@@ -1,0 +1,5 @@
+steam:
+  apikey: "<key>"
+  profiles:
+    - "https://steamcommunity.com/id/<profile>"
+database_URI: "sqlite:///steamlogger.sqlite"
