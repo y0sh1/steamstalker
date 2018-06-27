@@ -33,7 +33,7 @@ class Activity(Base):
 
     id = Column(Integer, primary_key=True)
     steamid = Column(Integer, nullable=False)
-    gameid = Column(Integer, nullable=False)
+    gameid = Column(Integer, nullable=True)
     event_datetime = Column(DateTime, nullable=False)
 
 if args.install:
