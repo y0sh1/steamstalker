@@ -1,4 +1,6 @@
-FROM arm32v7/python:3
+FROM balenalib/rpi-debian-python:latest
+
+RUN [ "cross-build-start" ]
 
 WORKDIR /usr/src/app
 
@@ -6,5 +8,7 @@ COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY steamstalker.py ./
+
+RUN [ "cross-build-end" ]
 
 CMD [ "python", "./steamstalker.py" ]
