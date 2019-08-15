@@ -3,7 +3,7 @@ FROM balenalib/raspberrypi3-python:3.7
 RUN [ "cross-build-start" ]
 
 RUN apt update
-RUN apt install gcc
+RUN apt install gcc build-essential crossbuild-essential-armhf crossbuild-essential-arm64
 
 WORKDIR /usr/src/app
 
