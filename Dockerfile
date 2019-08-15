@@ -2,6 +2,8 @@ FROM balenalib/raspberrypi3-python:3.7
 
 RUN [ "cross-build-start" ]
 
+RUN apt install gcc
+
 WORKDIR /usr/src/app
 
 COPY requirements.txt ./
