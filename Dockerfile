@@ -3,7 +3,7 @@ FROM balenalib/raspberrypi3-python:3.7
 RUN [ "cross-build-start" ]
 
 RUN apt update
-RUN apt install gcc build-essential
+RUN apt install gcc build-essential libssl-dev libffi-dev python-dev
 
 WORKDIR /usr/src/app
 
