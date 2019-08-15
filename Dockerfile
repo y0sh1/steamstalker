@@ -1,4 +1,4 @@
-FROM balenalib/raspberrypi3-python:latest
+FROM balenalib/raspberrypi3-python:3.7
 
 RUN [ "cross-build-start" ]
 
