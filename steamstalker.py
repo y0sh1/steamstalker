@@ -13,7 +13,7 @@ args = parser.parse_args()
 
 config = None
 
-with open('config.yml', 'r+') as f:
+with open('storage/config.yml', 'r+') as f:
     config = yaml.load(f)
 
 if not config:
