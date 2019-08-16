@@ -9,10 +9,8 @@ WORKDIR /usr/src/app
 
 RUN mkdir /usr/src/app/storage
 
-COPY requirements.txt ./
+COPY requirements.txt steamstalker.py ./
 RUN pip install --no-cache-dir -r requirements.txt
-
-COPY steamstalker.py ./
 
 RUN [ "cross-build-end" ]
 
